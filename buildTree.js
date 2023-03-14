@@ -2,7 +2,7 @@ import { Node } from "./Node.js";
 
 export function buildTree (array, start, end) {
     if(start>end) return null;
-    let mid = Math.round(((start+end)/2)); //2H potroseno za dzabe za edno math.round
+    let mid = Math.round(((start+end)/2)); 
     let root = new Node(array[mid]);
 
     root.left = buildTree(array, start, mid-1);
